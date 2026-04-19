@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false">
+
+    <!-- Header Banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="?attr/actionBarSize"
+        android:paddingBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_account_circle"
+            app:tint="@color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+            android:textSize="16sp"
+            android:textColor="#CCFFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengguna"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user@email.com"
+            android:textSize="13sp"
+            android:textColor="#CCFFFFFF"/>
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Info Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seminar Registration App"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftarkan diri Anda ke seminar-seminar pilihan yang telah kami siapkan. Tingkatkan pengetahuan dan jaringan Anda bersama kami!"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Feature Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/primary_light"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersedia 7 Seminar Pilihan"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="12dp"/>
+
+                    <!-- Seminar Item -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="8dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                            android:src="@drawable/ic_check_circle" app:tint="@color/success"
+                            android:layout_marginEnd="8dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Kecerdasan Buatan" android:textSize="13sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="8dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                            android:src="@drawable/ic_check_circle" app:tint="@color/success"
+                            android:layout_marginEnd="8dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Pengembangan Aplikasi Mobile" android:textSize="13sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="8dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                            android:src="@drawable/ic_check_circle" app:tint="@color/success"
+                            android:layout_marginEnd="8dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Keamanan Siber &amp; Banyak lagi..." android:textSize="13sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Daftar Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDaftarSeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR SEMINAR"
+                android:textSize="16sp"
+                android:padding="16dp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_event"
+                app:iconGravity="textStart"
+                android:backgroundTint="@color/primary"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Logout Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KELUAR"
+                android:textSize="14sp"
+                android:padding="14dp"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/primary"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

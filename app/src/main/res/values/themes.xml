@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SeminarApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- TextInputLayout tinting -->
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+    </style>
+
+    <!-- ActionBar style dengan back button -->
+    <style name="Theme.SeminarApp.WithActionBar" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+    </style>
+</resources>
